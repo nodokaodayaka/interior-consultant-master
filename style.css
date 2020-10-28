@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color: white;
+  background-color: #181719;
+}
+
+.container {
+  margin: 42px 76px 46px 77px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: "Crimson Pro";
+  font-weight: 200;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  padding: 8px;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li.items {
+  list-style: none;
+  margin-left: 86px;
+}
+
+nav li.items a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.194rem;
+  text-decoration: none;
+}
+
+nav li.items a:hover {
+  font-weight: 700;
+}
+
+li.btn {
+  display: none;
+}
+
+div.menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+div.menu ul {
+  display: block;
+  width: 100%;
+  margin-top: 200px;
+}
+
+div.menu ul li {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+div.menu ul li.btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 177px;
+  padding-bottom: 140px;
+}
+
+div.left h2.title {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6.144rem;
+  margin-bottom: 40px;
+}
+
+div.left p.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.926rem;
+  display: block;
+  width: 410px;
+  margin-bottom: 48px;
+}
+
+div.left div.read-more a {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.194rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.left div.read-more a i {
+  position: absolute;
+  top: -2px;
+  right: -35px;
+}
+
+div.right {
+  position: relative;
+}
+div.right .cover-iamge {
+  width: 100%;
+  padding: 24px 0px 8px 52px;
+}
+
+div.right .introduction {
+  position: absolute;
+  bottom: -90px;
+  right: 5%;
+  width: 50%;
+  padding-top: 18px;
+  padding-right: 31px;
+  padding-bottom: 34px;
+  padding-left: 31px;
+}
+
+div.right .introduction .info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+div.right .introduction .right {
+  margin-left: 19px;
+}
+
+div.right .introduction .avator {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+div.right .introduction .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.707rem;
+  margin-bottom: 8px;
+}
+
+div.right .introduction .job {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.463rem;
+  color: #828282;
+}
+
+div.right .introduction .work {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.072rem;
+  color:white;
+  max-width: 287px;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.707rem;
+  color: #A9A9A9;  ;
+}
+
+
+@media screen and (max-width: 888px) {
+  .container {
+    margin: 19px 12px 24px 12px;
+  }
+
+  nav ul li.items {
+    display: none;
+  }
+
+  div.menu li.items a {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.194rem;
+    text-decoration: none;
+  }
+
+  div.menu li.items a:hover {
+    font-weight: 700;
+  }
+
+  li.btn {
+    display: block;
+  }
+
+  div.menu.show {
+    display: block;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 38px;
+  }
+
+  div.left h2.title {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 3.8rem;
+    line-height: 6.144rem;
+    margin-bottom: 25px;
+  }
+
+  div.left p.description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.707rem;
+    display: block;
+    width: 250px;
+    margin-bottom: 25px;
+  }
+
+  div.right .cover-iamge {
+    width: 100%;
+    padding: 24px 0px 0px 0px;
+  }
+
+  div.right .introduction {
+    position: absolute;
+    bottom: -110px;
+    right: 5%;
+    width: 85%;
+    padding-top: 18px;
+    padding-right: 31px;
+    padding-bottom: 34px;
+    padding-left: 31px;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+  }
+
+
+  div.right .introduction .info {
+    margin-bottom: 19px;
+  }
+
+  div.right .introduction .avator {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
+
+  div.right .introduction .right {
+    margin-left: 13px;
+  }
+
+  div.right .introduction .name {
+    font-size: 1.2rem;
+    line-height: 1.463rem;
+    margin-bottom: 5px;
+  }
+
+  div.right .introduction .job {
+    font-size: 1.0rem;
+    line-height: 1.219rem;
+    color: #828282;
+  }
+
+  div.right .introduction .work {
+    font-size: 1.8rem;
+    line-height: 2.304rem;
+    max-width: 210px;
+  }
+
+  div.border {
+    margin: 0 57px;
+    border-bottom: 1px solid #a9a9a9;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+
+  footer p {
+    margin-top: 10px;
+  }
+}

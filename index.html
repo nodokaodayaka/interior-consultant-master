@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>interior-consultant-master</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">This Interior</div>
+        <ul>
+          <li class="items"><a href="#">Home</a></li>
+          <li class="items"><a href="#">Collection</a></li>
+          <li class="items"><a href="#">About</a></li>
+          <li class="items"><a href="#">Contact</a></li>
+          <li class="btn"><i class="material-icons">menu</i></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="left">
+          <h2 class="title">Modern interior</h2>
+          <p class="description">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <div class="read-more">
+            <a href="#">Read more<i class="material-icons">trending_flat</i></a>
+          </div>
+        </div>
+        <div class="right">
+          <img class="cover-iamge" src="./photo1.png" alt="photo1" />
+          <div class="introduction">
+            <div class="info">
+              <img class="avator" src="./photo2.png" alt="photo2" />
+              <div class="right">
+                <p class="name">Aliza Webber</p>
+                <p class="job">Interior designer</p>
+              </div>
+            </div>
+            <p class="work">Designed in 2020 by Aliza Webber</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="border"></div>
+        <p>nodokaodayaka @ DevChallenges.io</p>
+      </footer>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">Collection</a></li>
+        <li class="items"><a href="#">About</a></li>
+        <li class="items"><a href="#">Contact</a></li>
+        <li class="btn"><i class="material-icons">close</i></li>
+      </ul>
+    </div>
+    <script>
+      const open = document.querySelector("nav ul li.btn");
+      open.addEventListener("click", () => {
+        const menu = document.querySelector("div.menu");
+        menu.classList.toggle("show");
+      });
+      const close = document.querySelector("div.menu ul li.btn");
+      close.addEventListener("click", () => {
+        const menu = document.querySelector("div.menu");
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
